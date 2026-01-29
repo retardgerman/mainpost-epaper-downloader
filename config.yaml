@@ -1,0 +1,25 @@
+# Mainpost ePaper Downloader Konfiguration
+
+# Download-Einstellungen
+download:
+  output_dir: './downloads'
+  parallel_downloads: 4
+  retry_attempts: 3
+  retry_delay: 5
+  timeout: 120
+  skip_existing: true
+
+# Filter - nur diese Regionen herunterladen (leer = alle)
+# Verfügbare Regionen: Würzburg, Schweinfurt, Main-Spessart, Kitzingen,
+#   Hofheim, Gerolzhofen, Bad Kissingen, Bad Königshofen, Main-Tauber,
+#   Ochsenfurt, Bad Neustadt, Rhön-Saale, Mellrichstadt, Haßfurt, Obermain
+filter:
+  editions: ['Gerolzhofen']
+  # Datumsbereich (optional, Format: YYYY-MM-DD)
+  date_from: ''
+  date_to: ''
+
+# Logging
+logging:
+  level: 'INFO'
+  file: './logs/downloader.log'

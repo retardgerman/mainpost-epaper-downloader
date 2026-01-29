@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Downloads and logs (user-specific data)
+downloads/
+logs/
+
+# IDE
+.idea/
+.vscode/
+*.swp
